@@ -1,0 +1,19 @@
+#
+# Copyright (c) 2021 Circuit Dojo LLC
+#
+# SPDX-License-Identifier: LicenseRef-Circuit-Dojo-5-Clause
+#
+
+manifest:
+  remotes:
+    - name: nrfconnect
+      url-base: https://github.com/nrfconnect
+  projects:
+    - name: nrf
+      repo-path: sdk-nrf
+      remote: nrfconnect
+      revision: v1.7.0
+      import: true
+  self:
+    # This repository should be cloned to 
+    path: app

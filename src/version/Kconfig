@@ -1,0 +1,37 @@
+#
+# Copyright (c) 2021 Circuit Dojo LLC
+#
+# SPDX-License-Identifier: LicenseRef-Circuit-Dojo-5-Clause
+#
+
+menu "Version"
+
+config APP_VERSION
+	string "String of application version"
+	default "unknown"
+
+config APP_VERSION_MAJOR
+	int "Major version number extracted from Git"
+	default 0
+
+config APP_VERSION_MINOR
+	int "Minor version number extracted from Git"
+	default 0
+
+config APP_VERSION_PATCH
+	int "Patch version number extracted from Git"
+	default 0
+
+config APP_VERSION_COMMIT
+	int "Commit count extracted from Git"
+	default 0
+
+config APP_VERSION_HASH
+	string "Patch version number extracted from Git"
+	default ""
+
+config APP_RELEASE_TYPE
+	string "Release type"
+	default "debug"
+
+endmenu
