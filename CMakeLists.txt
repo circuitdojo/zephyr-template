@@ -55,6 +55,7 @@ if(version)
   file(APPEND conf/version.conf "CONFIG_APP_VERSION_COMMIT=${version_commit}\n")
   file(APPEND conf/version.conf "CONFIG_APP_VERSION_HASH=\"${version_hash}\"\n")
   file(APPEND conf/version.conf "CONFIG_APP_VERSION=\"${version}\"\n")
+  file(APPEND conf/version.conf "CONFIG_MCUBOOT_IMAGE_VERSION=\"${version_major}.${version_minor}.${version_patch}+${version_commit}\"\n")
 
   message(STATUS "Version: ${version_major}.${version_minor}.${version_patch}-${version_commit}-${version_hash}")
 
