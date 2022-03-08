@@ -1,9 +1,9 @@
 /*
- * Copyright Circuit Dojo (c) 2021
- * 
- * SPDX-License-Identifier: LicenseRef-Circuit-Dojo-5-Clause
+ * Copyright (c) 2022 Circuit Dojo LLC
+ *
+ * SPDX-License-Identifier: Apache-2.0
  */
- 
+
 #include <zephyr.h>
 
 #include <app_event_manager.h>

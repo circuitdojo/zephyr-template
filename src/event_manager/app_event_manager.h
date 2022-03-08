@@ -1,7 +1,7 @@
 /*
- * Copyright Circuit Dojo (c) 2021
- * 
- * SPDX-License-Identifier: LicenseRef-Circuit-Dojo-5-Clause
+ * Copyright (c) 2022 Circuit Dojo LLC
+ *
+ * SPDX-License-Identifier: Apache-2.0
  */
 
 #ifndef _APP_EVENT_MANAGER_H
@@ -9,13 +9,13 @@
 
 /**
  * @brief Max size of event queue
- * 
+ *
  */
 #define APP_EVENT_QUEUE_SIZE 24
 
 /**
  * @brief Simplified macro for pushing an app event without data
- * 
+ *
  */
 #define APP_EVENT_MANAGER_PUSH(x)  \
     struct app_event app_event = { \
@@ -41,7 +41,7 @@ enum app_event_type
 /**
  * @brief Application event that can be passed back to the main
  * context
- * 
+ *
  */
 struct app_event
 {
@@ -54,7 +54,7 @@ struct app_event
 
 /**
  * @brief Get the string representation of the Application event
- * 
+ *
  * @param type app event type enum
  * @return char* NULL if error
  */
@@ -62,17 +62,17 @@ char *app_event_type_to_string(enum app_event_type type);
 
 /**
  * @brief Pushes event to message queue
- * 
+ *
  * @param p_evt the event to be copied.
- * @return int 
+ * @return int
  */
 int app_event_manager_push(struct app_event *p_evt);
 
 /**
  * @brief Gets an event from the message queue
- * 
+ *
  * @param p_evt pointer where the data will be copied to.
- * @return int 
+ * @return int
  */
 int app_event_manager_get(struct app_event *p_evt);
 

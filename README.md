@@ -27,3 +27,7 @@ On first run, you will be prompted for the board name and the project that you'd
 ## More info
 
 For more information, check out the Circuit Dojo documentation at [docs.jaredwolff.com](https://docs.jaredwolff.com)
+
+## License
+
+Apache 2.0. See `LICENSE` for more info.
