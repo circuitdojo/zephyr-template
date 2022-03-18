@@ -2,9 +2,9 @@
 
 ## Create your own project
 
-1. Fork this repository!
+1. Use this template!
 
-   Create a fork of this repository and use it as a starting point for your own project(s).
+   Click the green "Use this template" on [https://github.com/circuitdojo/zephyr-template/](https://github.com/circuitdojo/zephyr-template/)
 
 2. Initialize your new project using Zephyr Tools in VSCode:
 
